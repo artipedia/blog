@@ -42,6 +42,14 @@ overview: true
 {% endif %}
 <section class="features">
   <div class="grid mainbox">
+ 	<div class="card">
+    <ins class="adsbygoogle"
+     style="display:block"
+     data-ad-format="fluid"
+     data-ad-layout-key="-6t+ed+2i-1n-4w"
+     data-ad-client="ca-pub-1344864982877041"
+     data-ad-slot="6785974866"></ins>
+</div>
  	
      {% for post in paginator.posts %} 
      <script type="application/ld+json">
@@ -73,11 +81,12 @@ overview: true
   "description": "{{ post.description | truncate: 160 }}"
 }
 </script>
-       <a class="post-link-index" href="{{ post.url | prepend: site.baseurl }}" title="{{ post.title }}" target="_blank">
+  
+       <a class="post-link-index" href="{{ post.url | prepend: site.baseurl }}" title="{{ post.title }}">
           <div class="card">
                 <span class="image">
                  <img alt="{{ post.title }}" title="{{ post.title }}" class="post-image-index"  src="/img/thumb/{{ post.image }}" width="300" height="146.25" />
-                <p class="time"><time datetime="{{post.date | date: "%Y-%m-%d"}}">{{post.date | date: "%Y %b %d"}}</time></p>
+                <p class="time"><time datetime="{{post.date | date: '%Y-%m-%d'}}">{{post.date | date: "%Y %b %d"}}</time></p>
                 </span>
             <div class="card-footer">
                     <h2 class="post-index-title">{{ post.title }}</h2>
@@ -85,8 +94,11 @@ overview: true
                     
                      <p  class="post-excerpt">{{ post.description | truncate: 120 }}</p>
                </div>
-        </div>   </a><div class="card">
-<ins class="adsbygoogle"
+        </div> 
+    </a>
+      {% endfor %}   
+    <div class="card">
+    <ins class="adsbygoogle"
      style="display:block"
      data-ad-format="fluid"
      data-ad-layout-key="-6t+ed+2i-1n-4w"
@@ -94,11 +106,7 @@ overview: true
      data-ad-slot="6785974866"></ins>
 <script>
      (adsbygoogle = window.adsbygoogle || []).push({});
-         </script></div>         
-   
-   
-      {% endfor %}   
-    
+</script></div>
     
 </div>
 {% include pagination.html %}
