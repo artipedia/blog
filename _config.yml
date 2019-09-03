@@ -46,14 +46,16 @@ exclude:
 - CNAME
 - icomoon-selection.json
 - readme.md
+
 compress_html:
   clippings: all
   comments: [""]
-  endings: [html, head, body, li, dt, dd, rt, rp, optgroup, option, colgroup, caption, thead, tbody, tfoot, tr, td, th]
+  endings: [all]
   profile: false
   blanklines: false
   ignore:
     envs: []
+
 paginate: 6
 paginate_path: /page/:num/
 staticmanUrl: https://api.staticman.net/v2/entry/ArtiPedia/blog/master/comments
