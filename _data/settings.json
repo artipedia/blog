@@ -1,1 +1,7 @@
-
+{
+  "site_title": "ArtiPedia",
+  "posts": {
+    "front_limit": 5,
+    "author": "artipedia"
+  }
+}
