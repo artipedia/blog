@@ -67,5 +67,5 @@ collections:
               - { label: 'Avatar', name: 'avatar', widget: 'image', hint: 'First and Last' }
               - { label: 'Bio', name: 'bio', widget: 'string', hint: 'Bio Description' }
               - { label: 'Email', name: 'email', widget: 'string', hint: 'contoh@gmail.com }
-              - { label: 'Twitter', name: 'twitter', widget: 'string', hint: 'contoh: artipedia' }
-              - { label: 'Facebook', name: 'facebook', widget: 'string', hint: 'contoh: artipedia' }
+              - { label: 'Twitter', name: 'twitter', widget: 'string', hint: 'contoh artipedia' }
+              - { label: 'Facebook', name: 'facebook', widget: 'string', hint: 'contoh artipedia' }
