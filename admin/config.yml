@@ -6,7 +6,6 @@ backend:
 site_url: https://blog.artipedia.id
   
 media_folder: "img/"
-public_folder: "/img/"
 
 collections:
   - name: "posts"
