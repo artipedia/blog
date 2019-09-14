@@ -21,12 +21,6 @@ collections:
       - label: "Image"
         name: "image"
         widget: "object"
-        fields:
-          - {label: "Path", name: "path", widget: "image"}
-          - {label: "Feature image path", name: "feature", widget: "image"}
-          - {label: "Image width", name: "width", widget: "number", valueType: "int"}
-          - {label: "Image height", name: "height", widget: "number", valueType: "int"}
-          - {label: "Image caption", name: "caption", widget: "string"}
       - {label: "Last modified date", name: "last_modified_date", widget: "datetime"}
       - {label: "Tags", name: "tags", widget: "list"}
       - {label: "Body", name: "body", widget: "markdown"}
