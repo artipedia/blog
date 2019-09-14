@@ -1,0 +1,164 @@
+I"J<ul id="markdown-toc">
+  <li><a href="#apa-itu-widget-artikel-terkait" id="markdown-toc-apa-itu-widget-artikel-terkait">Apa itu Widget Artikel Terkait</a></li>
+  <li><a href="#cara-membuat-widget-artikel-terkait-di-blog-jekyll" id="markdown-toc-cara-membuat-widget-artikel-terkait-di-blog-jekyll">Cara membuat widget artikel terkait di blog Jekyll</a>    <ul>
+      <li><a href="#langkah-pertama--membuat-file-artikel-terkaithtml" id="markdown-toc-langkah-pertama--membuat-file-artikel-terkaithtml">Langkah Pertama : Membuat file <code class="highlighter-rouge">artikel-terkait.html</code></a></li>
+      <li><a href="#langkah-kedua--menambahkan-kode" id="markdown-toc-langkah-kedua--menambahkan-kode">Langkah Kedua : Menambahkan kode</a></li>
+      <li><a href="#langkah-ketiga--menambahkan-css" id="markdown-toc-langkah-ketiga--menambahkan-css">Langkah Ketiga : Menambahkan <code class="highlighter-rouge">CSS</code></a></li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="apa-itu-widget-artikel-terkait">Apa itu Widget Artikel Terkait</h3>
+<p>Widget Artikel Terkait (<em>related-post</em>) penting bagi sebuah blog. Kenapa? Karena salah satunya dapat menurunkan <a href="https://en.wikipedia.org/wiki/Bounce_rate" title="Bounce Rate">bounce rate</a> blog, selain itu dapat mempermudah pengunjung dalam berselancar di blog.</p>
+
+<p>Membuat artikel terkait pada blogspot dan wordpress mungkin anda semua sudah tahu bagaimana caranya. Akan tetapi widget artikel terkait yang akan buat disini adalah widget artikel terkait untuk <a href="https://blog.artipedia.site/id/cara-membuat-web-digithub-bagi-pemula.html" title="Membuat blog di github">blog jekyll</a> (blog yang dihosting di Github).</p>
+
+<h3 id="cara-membuat-widget-artikel-terkait-di-blog-jekyll">Cara membuat widget artikel terkait di blog Jekyll</h3>
+<p>Langkah-langkah membuatnya terdiri dari beberapa tahap:</p>
+
+<h4 id="langkah-pertama--membuat-file-artikel-terkaithtml">Langkah Pertama : Membuat file <code class="highlighter-rouge">artikel-terkait.html</code></h4>
+
+<p><img src="https://blog.artipedia.id/img/artikel-terkait-jekyll-page.png" alt="Membuat file baru" title="Membuat file baru" /></p>
+
+<p>Kesatu: Cari folder bernama <code class="highlighter-rouge">_include</code> kemudian klik</p>
+
+<p>Kedua: Klik <em>create new file</em></p>
+
+<p>Ketiga: Beri nama file tersebut dengan <code class="highlighter-rouge">artikel-terkait.html</code></p>
+
+<p><img src="https://blog.artipedia.id/img/artikel-terkait-jekyll-page2.png" alt="Menamai file" title="Menamai file" /></p>
+
+<p>Keempat Copy dan pastekan kedo dibawah ini dan simpan (commit)</p>
+
+<div class="language-liquid highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;div class="recent"&gt;
+&lt;h4&gt;&lt;i class="fa fa-list" aria-hidden="true"&gt;&lt;/i&gt;  Lihat lainnya&lt;/h4&gt;
+<span class="p">{%</span><span class="w"> </span><span class="kr">if</span><span class="w"> </span><span class="nv">page</span><span class="p">.</span><span class="nv">path</span><span class="w"> </span><span class="ow">contains</span><span class="w"> </span><span class="s1">'_jekyll-themes'</span><span class="w"> </span><span class="p">%}</span>
+ &lt;div class="rect"&gt;
+    <span class="p">{%</span><span class="w"> </span><span class="nt">for</span><span class="w"> </span><span class="nv">jekyll-themes</span><span class="w"> </span><span class="kr">in</span><span class="w"> </span><span class="nv">site.jekyll-themes</span><span class="w">  </span><span class="na">limit</span><span class="o">:</span><span class="w"> </span><span class="mi">4</span><span class="w"> </span><span class="p">%}</span>
+         <span class="p">{%</span><span class="w"> </span><span class="kr">if</span><span class="w"> </span><span class="nv">jekyll</span><span class="err">-</span><span class="nv">themes</span><span class="p">.</span><span class="nv">url</span><span class="w"> </span><span class="o">!=</span><span class="w"> </span><span class="nv">page</span><span class="p">.</span><span class="nv">url</span><span class="w"> </span><span class="p">%}</span>
+             &lt;a href="<span class="p">{{</span><span class="w"> </span><span class="nv">jekyll</span><span class="err">-</span><span class="nv">themes</span><span class="p">.</span><span class="nv">url</span><span class="w"> </span><span class="p">|</span><span class="w"> </span><span class="nf">prepend</span><span class="p">:</span><span class="w"> </span>site.baseurl<span class="w"> </span><span class="p">}}</span>"&gt;
+                  &lt;div class="rel"&gt;
+                      &lt;img alt="<span class="p">{{</span><span class="nv">jekyll</span><span class="err">-</span><span class="nv">themes</span><span class="p">.</span><span class="nv">title</span><span class="w"> </span><span class="p">|</span><span class="w"> </span><span class="nf">append</span><span class="p">:</span><span class="s1">'jekyll theme'</span><span class="p">}}</span>" src="/thumbs/<span class="p">{{</span><span class="w"> </span><span class="nv">jekyll</span><span class="err">-</span><span class="nv">themes</span><span class="p">.</span><span class="nv">image</span><span class="w"> </span><span class="p">}}</span>"&gt;
+                       &lt;p&gt;&lt;small&gt;<span class="p">{{</span><span class="w"> </span><span class="nv">jekyll</span><span class="err">-</span><span class="nv">themes</span><span class="p">.</span><span class="nv">title</span><span class="w"> </span><span class="p">|</span><span class="w"> </span><span class="nf">truncate</span><span class="p">:</span><span class="w"> </span><span class="mi">300</span><span class="w"> </span><span class="p">}}</span>&lt;/small&gt;&lt;/p&gt;
+                  &lt;/div&gt;
+              &lt;/a&gt;
+        <span class="p">{%</span><span class="w"> </span><span class="kr">endif</span><span class="w"> </span><span class="p">%}</span>
+    <span class="p">{%</span><span class="w"> </span><span class="nt">endfor</span><span class="w"> </span><span class="p">%}</span>
+&lt;/div&gt;
+<span class="p">{%</span><span class="w"> </span><span class="kr">else</span><span class="w"> </span><span class="p">%}</span>
+&lt;div class="rect"&gt;
+  <span class="p">{%</span><span class="w"> </span><span class="nt">assign</span><span class="w"> </span><span class="nv">maxRelated</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">6</span><span class="w"> </span><span class="p">%}</span>
+  <span class="p">{%</span><span class="w"> </span><span class="nt">assign</span><span class="w"> </span><span class="nv">minCommonTags</span><span class="w"> </span><span class="o">=</span><span class="w">  </span><span class="mi">1</span><span class="w"> </span><span class="p">%}</span>
+  <span class="p">{%</span><span class="w"> </span><span class="nt">assign</span><span class="w"> </span><span class="nv">maxRelatedCounter</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="w"> </span><span class="p">%}</span>
+  <span class="p">{%</span><span class="w"> </span><span class="nt">for</span><span class="w"> </span><span class="nv">post</span><span class="w"> </span><span class="kr">in</span><span class="w"> </span><span class="nv">site.posts</span><span class="w"> </span><span class="p">%}</span>
+    <span class="p">{%</span><span class="w"> </span><span class="nt">assign</span><span class="w"> </span><span class="nv">sameTagCount</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="w"> </span><span class="p">%}</span>
+    <span class="p">{%</span><span class="w"> </span><span class="nt">assign</span><span class="w"> </span><span class="nv">commonTags</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">''</span><span class="w"> </span><span class="p">%}</span>
+     <span class="p">{%</span><span class="w"> </span><span class="nt">for</span><span class="w"> </span><span class="nv">category</span><span class="w"> </span><span class="kr">in</span><span class="w"> </span><span class="nv">post.categories</span><span class="w"> </span><span class="p">%}</span>
+      <span class="p">{%</span><span class="w"> </span><span class="kr">if</span><span class="w"> </span><span class="nv">post</span><span class="p">.</span><span class="nv">url</span><span class="w"> </span><span class="o">!=</span><span class="w"> </span><span class="nv">page</span><span class="p">.</span><span class="nv">url</span><span class="w"> </span><span class="p">%}</span>
+        <span class="p">{%</span><span class="w"> </span><span class="kr">if</span><span class="w"> </span><span class="nv">page</span><span class="p">.</span><span class="nv">categories</span><span class="w"> </span><span class="ow">contains</span><span class="w"> </span><span class="nv">category</span><span class="w"> </span><span class="p">%}</span>
+          <span class="p">{%</span><span class="w"> </span><span class="nt">assign</span><span class="w"> </span><span class="nv">sameTagCount</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nv">sameTagCount</span><span class="w"> </span><span class="p">|</span><span class="w"> </span><span class="nf">plus</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="w"> </span><span class="p">%}</span>
+          <span class="p">{%</span><span class="w"> </span><span class="nt">capture</span><span class="w"> </span><span class="na">tagmarkup</span><span class="w"> </span><span class="p">%}</span> &lt;span class="label label-default"&gt;<span class="p">{{</span><span class="w"> </span><span class="nv">tag</span><span class="w"> </span><span class="p">}}</span>&lt;/span&gt; <span class="p">{%</span><span class="w"> </span><span class="nt">endcapture</span><span class="w"> </span><span class="p">%}</span>
+          <span class="p">{%</span><span class="w"> </span><span class="nt">assign</span><span class="w"> </span><span class="nv">commonTags</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nv">commonTags</span><span class="w"> </span><span class="p">|</span><span class="w"> </span><span class="nf">append</span><span class="p">:</span><span class="w"> </span>tagmarkup<span class="w"> </span><span class="p">%}</span>
+        <span class="p">{%</span><span class="w"> </span><span class="kr">endif</span><span class="w"> </span><span class="p">%}</span>
+      <span class="p">{%</span><span class="w"> </span><span class="kr">endif</span><span class="w"> </span><span class="p">%}</span>
+    <span class="p">{%</span><span class="w"> </span><span class="nt">endfor</span><span class="w"> </span><span class="p">%}</span>
+    <span class="p">{%</span><span class="w"> </span><span class="kr">if</span><span class="w"> </span><span class="nv">sameTagCount</span><span class="w"> </span><span class="o">&gt;=</span><span class="w"> </span><span class="nv">minCommonTags</span><span class="w"> </span><span class="p">%}</span>
+          &lt;a href="<span class="p">{{</span><span class="w"> </span><span class="nv">site</span><span class="p">.</span><span class="nv">baseurl</span><span class="w"> </span><span class="p">}}{{</span><span class="w"> </span><span class="nv">post</span><span class="p">.</span><span class="nv">url</span><span class="w"> </span><span class="p">}}</span>"&gt;
+              &lt;div class="rel"&gt;
+                  &lt;img alt="<span class="p">{{</span><span class="nv">post</span><span class="p">.</span><span class="nv">title</span><span class="p">}}</span>" title="<span class="p">{{</span><span class="nv">post</span><span class="p">.</span><span class="nv">title</span><span class="p">}}</span>" src="/img/<span class="p">{{</span><span class="nv">post</span><span class="p">.</span><span class="nv">image</span><span class="p">}}</span>"&gt;
+                     &lt;p&gt;&lt;small&gt;<span class="p">{{</span><span class="w"> </span><span class="nv">post</span><span class="p">.</span><span class="nv">title</span><span class="w"> </span><span class="p">|</span><span class="w"> </span><span class="nf">truncate</span><span class="p">:</span><span class="w"> </span><span class="mi">300</span><span class="w"> </span><span class="p">}}</span>&lt;/small&gt;&lt;/p&gt;
+              &lt;/div&gt;
+          &lt;/a&gt;
+      <span class="p">{%</span><span class="w"> </span><span class="nt">assign</span><span class="w"> </span><span class="nv">maxRelatedCounter</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nv">maxRelatedCounter</span><span class="w"> </span><span class="p">|</span><span class="w"> </span><span class="nf">plus</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="w"> </span><span class="p">%}</span>
+      <span class="p">{%</span><span class="w"> </span><span class="kr">if</span><span class="w"> </span><span class="nv">maxRelatedCounter</span><span class="w"> </span><span class="o">&gt;=</span><span class="w"> </span><span class="nv">maxRelated</span><span class="w"> </span><span class="p">%}</span>
+        <span class="p">{%</span><span class="w"> </span><span class="nt">break</span><span class="w"> </span><span class="p">%}</span>
+      <span class="p">{%</span><span class="w"> </span><span class="kr">endif</span><span class="w"> </span><span class="p">%}</span>
+    <span class="p">{%</span><span class="w"> </span><span class="kr">endif</span><span class="w"> </span><span class="p">%}</span>
+  <span class="p">{%</span><span class="w"> </span><span class="nt">endfor</span><span class="w"> </span><span class="p">%}</span>
+&lt;/div&gt;
+<span class="p">{%</span><span class="w"> </span><span class="kr">endif</span><span class="w"> </span><span class="p">%}</span>
+ &lt;/div&gt;
+</code></pre></div></div>
+
+<h4 id="langkah-kedua--menambahkan-kode">Langkah Kedua : Menambahkan kode</h4>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{% include recent.html %}
+</code></pre></div></div>
+
+<p>Kesatu: Cari Folder <code class="highlighter-rouge">_layout</code></p>
+
+<p>Kedua: Cari dan buka file <code class="highlighter-rouge">post.html</code> (layout halaman posting)</p>
+
+<p>Ketiga: Copy dan pastekan kode</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{% include recent.html %}
+</code></pre></div></div>
+
+<p>(letakan dibagian dimana anda ingin meletakannya)
+Keempat: Simpan (commit)</p>
+
+<h4 id="langkah-ketiga--menambahkan-css">Langkah Ketiga : Menambahkan <code class="highlighter-rouge">CSS</code></h4>
+<p>Copy dan Pastekan Code CSS di bawah pada file css template anda!</p>
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nc">.recent</span> <span class="p">{</span>
+  <span class="nl">padding</span><span class="p">:</span> <span class="m">20px</span> <span class="m">40px</span> <span class="m">30px</span>
+<span class="p">}</span>
+
+<span class="nc">.rel</span> <span class="nt">p</span> <span class="p">{</span>
+  <span class="nl">margin</span><span class="p">:</span> <span class="m">5px</span> <span class="m">0</span> <span class="m">0</span> <span class="m">0</span><span class="p">;</span>
+  <span class="nl">line-height</span><span class="p">:</span> <span class="m">1em</span><span class="p">;</span>
+  <span class="nl">font</span><span class="p">:</span> <span class="nb">bold</span> <span class="m">14px</span> <span class="s1">"poppins"</span><span class="p">,</span> <span class="nb">sans-serif</span> <span class="cp">!important</span>
+<span class="p">}</span>
+
+<span class="nc">.recent</span> <span class="nt">h4</span> <span class="p">{</span>
+  <span class="nl">border-top</span><span class="p">:</span> <span class="m">1px</span> <span class="nb">solid</span> <span class="m">#e8e8e8</span><span class="p">;</span>
+  <span class="nl">border-bottom</span><span class="p">:</span> <span class="m">1px</span> <span class="nb">solid</span> <span class="m">#e8e8e8</span><span class="p">;</span>
+  <span class="nl">padding</span><span class="p">:</span> <span class="m">5px</span> <span class="m">0</span><span class="p">;</span>
+  <span class="nl">font-size</span><span class="p">:</span> <span class="m">16px</span><span class="p">;</span>
+  <span class="nl">margin</span><span class="p">:</span> <span class="m">0</span> <span class="m">0</span> <span class="m">15px</span> <span class="m">0</span>
+<span class="p">}</span>
+
+<span class="nc">.rect</span> <span class="p">{</span>
+  <span class="nl">margin</span><span class="p">:</span> <span class="m">0</span> <span class="nb">auto</span>
+<span class="p">}</span>
+
+<span class="nc">.rel</span> <span class="p">{</span>
+  <span class="nl">width</span><span class="p">:</span> <span class="m">32.9%</span><span class="p">;</span>
+  <span class="nl">display</span><span class="p">:</span> <span class="n">inline-grid</span><span class="p">;</span>
+  <span class="nl">padding</span><span class="p">:</span> <span class="m">5px</span><span class="p">;</span>
+  <span class="nl">opacity</span><span class="p">:</span> <span class="m">0.8</span>
+<span class="p">}</span>
+
+<span class="nc">.rel</span> <span class="nt">hover</span> <span class="p">{</span>
+  <span class="nl">opacity</span><span class="p">:</span> <span class="m">1</span>
+<span class="p">}</span>
+
+<span class="nc">.desc</span> <span class="nt">img</span> <span class="p">{</span>
+  <span class="nl">width</span><span class="p">:</span> <span class="m">100%</span>
+<span class="p">}</span>
+
+<span class="nc">.desc</span> <span class="p">{</span>
+  <span class="nl">margin-top</span><span class="p">:</span> <span class="m">30px</span>
+<span class="p">}</span>
+
+<span class="nc">.rect</span> <span class="nt">a</span> <span class="p">{</span>
+  <span class="nl">color</span><span class="p">:</span> <span class="m">#222</span>
+<span class="p">}</span>
+
+<span class="nc">.rect</span> <span class="nt">a</span><span class="nd">:hover</span> <span class="p">{</span>
+  <span class="nl">color</span><span class="p">:</span> <span class="m">#fabc4c</span>
+<span class="p">}</span>
+
+<span class="k">@media</span> <span class="p">(</span><span class="n">max-width</span><span class="p">:</span> <span class="m">568px</span><span class="p">)</span> <span class="p">{</span>
+  <span class="nt">article</span><span class="o">,</span>
+  <span class="nc">.article-footer</span> <span class="p">{</span>
+    <span class="nl">margin</span><span class="p">:</span> <span class="m">0</span> <span class="cp">!important</span>
+  <span class="p">}</span>
+  <span class="nc">.recent</span> <span class="p">{</span>
+    <span class="nl">padding</span><span class="p">:</span> <span class="m">20px</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+
+</code></pre></div></div>
+
+:ET

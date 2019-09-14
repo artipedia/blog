@@ -1,0 +1,13 @@
+I"š<h2 id="jekyll-di-windows">Jekyll di Windows</h2>
+<p>Meskipun Windows bukan platform yang didukung secara resmi, Windows dapat digunakan untuk menjalankan Jekyll dengan tweak yang tepat. Banyak cara untuk menginstall jekyll di window, namun cara yang termudah menurut saya adalah melalui Rubi Installer.</p>
+
+<h2 id="instalasi-melalui-rubyinstaller">Instalasi melalui RubyInstaller</h2>
+<p>RubyInstaller adalah installer berbasis Windows mandiri yang mencakup bahasa Ruby, lingkungan eksekusi, dokumentasi penting, dan banyak lagi.</p>
+
+<ol>
+  <li>Unduh dan Instal versi pengelola paket dari <a href="https://rubyinstaller.org/downloads/">RubyInstaller Downloads</a> .</li>
+  <li>Instal Jekyll dan Bundler melalui jendela command prompt: <code class="highlighter-rouge">gem install jekyll bundler</code></li>
+  <li>Periksa apakah Jekyll terpasang dengan benar: <code class="highlighter-rouge">jekyll -v</code></li>
+</ol>
+
+:ET

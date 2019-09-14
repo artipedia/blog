@@ -1,0 +1,169 @@
+I"<ul id="markdown-toc">
+  <li><a href="#membuat-posting-di-blog-jekyll" id="markdown-toc-membuat-posting-di-blog-jekyll">Membuat Posting di Blog Jekyll</a></li>
+  <li><a href="#memberi-nama-file" id="markdown-toc-memberi-nama-file">Memberi Nama File</a></li>
+  <li><a href="#format-penulisan-posting" id="markdown-toc-format-penulisan-posting">Format Penulisan Posting</a></li>
+  <li><a href="#keterangan-" id="markdown-toc-keterangan-">Keterangan :</a></li>
+  <li><a href="#format-penulisan" id="markdown-toc-format-penulisan">Format Penulisan</a>    <ul>
+      <li><a href="#paragraf" id="markdown-toc-paragraf">Paragraf</a></li>
+      <li><a href="#header" id="markdown-toc-header">Header</a></li>
+    </ul>
+  </li>
+  <li><a href="#judul-h1" id="markdown-toc-judul-h1">Judul h1</a>    <ul>
+      <li><a href="#sub-judul-h2" id="markdown-toc-sub-judul-h2">Sub Judul h2</a>        <ul>
+          <li><a href="#sub-judul-h3" id="markdown-toc-sub-judul-h3">Sub Judul h3</a>            <ul>
+              <li><a href="#sub-judul-h4" id="markdown-toc-sub-judul-h4">Sub Judul h4</a>                <ul>
+                  <li><a href="#sub-judul-h5" id="markdown-toc-sub-judul-h5">Sub Judul h5</a>                    <ul>
+                      <li><a href="#sub-judul-h6" id="markdown-toc-sub-judul-h6">Sub Judul h6</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li><a href="#bold" id="markdown-toc-bold">Bold</a></li>
+      <li><a href="#italic" id="markdown-toc-italic">Italic</a></li>
+      <li><a href="#link" id="markdown-toc-link">Link</a></li>
+      <li><a href="#image" id="markdown-toc-image">Image</a></li>
+      <li><a href="#blockquote" id="markdown-toc-blockquote">Blockquote</a></li>
+    </ul>
+  </li>
+</ul>
+<h3 id="membuat-posting-di-blog-jekyll">Membuat Posting di Blog Jekyll</h3>
+<p>Salah satu hal terbaik dalam blog Jekyll adalah Anda dapat mempublikasikan dan mengelola blog hanya dengan mengelola folder file teks di komputer Anda atau secara langsung di Github.</p>
+
+<p>Untuk membuat posting baru, yang perlu Anda lakukan adalah membuat file di <code class="highlighter-rouge">_posts</code> direktori. File tersebut dapat dibuat di Github secara langsung, ataupun menggunakan Aplikasi yang biasa anda gunakan, seperti notepad, Atom, dll.</p>
+
+<h3 id="memberi-nama-file">Memberi Nama File</h3>
+<p>Perlu dicatat file posting yang anda buat harus diberi nama sesuai dengan format berikut:</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>YEAR-MONTH-DAY-title.MARKUP
+</code></pre></div></div>
+<ol>
+  <li>YEAR   : diisi dengan tahun (empat angka)</li>
+  <li>MONTH  : diisi dengan bulan (dua angka)</li>
+  <li>Day    : diisi dengan tanggal (dua angka)</li>
+  <li>Title  : diisi dengan judul posting</li>
+  <li>Markup : diisi dengan .md atau .markdown (Merupakan ekstensi file yang mewakili format yang digunakan dalam file)</li>
+</ol>
+
+<p>Berikut ini adalah contoh dari nama file postingan yang valid:</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>2018-04-31-membuat-posting-diblog.md
+2018-04-31-membuat-posting-diblog.markdown
+</code></pre></div></div>
+
+<h3 id="format-penulisan-posting">Format Penulisan Posting</h3>
+
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nn">---</span>
+<span class="na">layout</span><span class="pi">:</span> <span class="s">post</span>
+<span class="na">title</span><span class="pi">:</span> <span class="s2">"</span><span class="s">Judul</span><span class="nv"> </span><span class="s">Artikel"</span>
+<span class="na">date</span><span class="pi">:</span> <span class="s2">"</span><span class="s">2018-02-19"</span>
+<span class="na">author</span><span class="pi">:</span> <span class="s">artipedia</span>
+<span class="na">categories</span><span class="pi">:</span> <span class="pi">[</span><span class="nv">referensi</span><span class="pi">]</span>
+<span class="nn">---</span>
+
+<span class="c1">## SubJudul</span>
+<span class="s">lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum</span> 
+<span class="s">lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum</span> 
+<span class="s">lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum</span>
+<span class="s">lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum</span> 
+ <span class="s">lorem ipsum lorem ipsum lorem ipsum.</span>
+
+<span class="s">lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum</span> 
+<span class="s">lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum</span> 
+<span class="s">lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum</span>
+<span class="s">lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum</span> 
+ <span class="s">lorem ipsum lorem ipsum lorem ipsum.</span>
+
+
+</code></pre></div></div>
+
+<h3 id="keterangan-">Keterangan :</h3>
+<ol>
+  <li>title : “Isi dengan Judul Artikel Anda”.</li>
+  <li>date : “Isi dengan tanggal dengan format Tahun-bulan-tanggal”.</li>
+  <li>author : “Isi dengan username github anda”.</li>
+  <li>categories: “isi dengan kategori artikel”.</li>
+</ol>
+
+<h2 id="format-penulisan">Format Penulisan</h2>
+
+<h3 id="paragraf">Paragraf</h3>
+<p>Paragraf ditulis dan dipisahkan dengan enter</p>
+
+<h3 id="header">Header</h3>
+<p>Penulisan sub judul</p>
+
+<div class="language-liquid highlighter-rouge"><div class="highlight"><pre class="highlight"><code># Judul &lt;h1&gt; tag
+## Sub Judul &lt;h2&gt; tag
+### Sub Judul &lt;h3&gt; tag
+#### Sub Judul &lt;h4&gt; tag
+##### Sub Judul &lt;h5&gt; tag
+###### This is an &lt;h6&gt; tag
+</code></pre></div></div>
+
+<p>Hasilnya</p>
+<h1 id="judul-h1">Judul h1</h1>
+<h2 id="sub-judul-h2">Sub Judul h2</h2>
+<h3 id="sub-judul-h3">Sub Judul h3</h3>
+<h4 id="sub-judul-h4">Sub Judul h4</h4>
+<h5 id="sub-judul-h5">Sub Judul h5</h5>
+<h6 id="sub-judul-h6">Sub Judul h6</h6>
+
+<h2 id="bold">Bold</h2>
+<p>Menebalkan huruf terdapat dua cara</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>1. **Contoh**
+2. __Contoh__.
+</code></pre></div></div>
+<p>Hasilnya
+<strong>Contoh</strong></p>
+
+<h2 id="italic">Italic</h2>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>1. *Contoh*
+2. _Contoh_.
+</code></pre></div></div>
+<p>Hasilnya
+<em>Contoh</em></p>
+
+<h2 id="link">Link</h2>
+<p>Untuk menyisipkan link</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>1. [ArtiPedia](http://artipedia.site/)
+2. [ArtiPedia](http://artipedia.site/ "Link dengan Atribut Title")
+</code></pre></div></div>
+<p>Hasilnya</p>
+<ol>
+  <li><a href="http://artipedia.site/">ArtiPedia</a></li>
+  <li><a href="http://artipedia.site/" title="Link dengan Atribut Title">ArtiPedia</a></li>
+</ol>
+
+<h2 id="image">Image</h2>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>1. Inline-style: 
+![alt text](https://artipedia.site/img/logo-2x.png "Logo Title Text 1")
+
+2. Reference-style: 
+![alt text][logo]
+[logo]: https://artipedia.site/img/logo-2x.png "Logo Title Text 2"
+</code></pre></div></div>
+
+<p>Hasilnya</p>
+<ol>
+  <li>Inline-style:</li>
+</ol>
+
+<p><img src="https://artipedia.site/img/logo-2x.png" alt="alt text" title="Logo Title Text 1" /></p>
+
+<ol>
+  <li>Reference-style:</li>
+</ol>
+
+<p><img src="https://artipedia.site/img/logo-2x.png" alt="alt text" title="Logo Title Text 2" /></p>
+
+<h2 id="blockquote">Blockquote</h2>
+<p>Untuk menambahkan <code>blockquote</code> tambahkan <code>&gt;</code> sebelum/pada awal paragraf</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&gt; Tes penulisan blockquote
+</code></pre></div></div>
+<p>Hasilnya</p>
+<blockquote>
+  <p>Tes penulisan blockquote</p>
+</blockquote>
+:ET

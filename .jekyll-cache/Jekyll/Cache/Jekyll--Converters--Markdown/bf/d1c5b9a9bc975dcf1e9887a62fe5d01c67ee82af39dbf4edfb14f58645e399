@@ -1,0 +1,80 @@
+I"Ó<h2 id="mengapa-kita-harus-mengecilkan-html">Mengapa kita harus mengecilkan HTML?</h2>
+<p>Kecepatan adalah faktor penting karena dapat meningkatkan peringkat di halaman pencarian Google. Meminimalkan HTML dapat menyebabkan peningkatan kecepatan sekitar 5% atau lebih. Situs web dapat lebih mudah dimuat bahkan pada koneksi yang lambat. Biasanya, file html terdiri dari banyak ruang kosong, komentar, baris baru, dll.</p>
+
+<ul id="markdown-toc">
+  <li><a href="#mengapa-kita-harus-mengecilkan-html" id="markdown-toc-mengapa-kita-harus-mengecilkan-html">Mengapa kita harus mengecilkan HTML?</a></li>
+  <li><a href="#bagaimana-cara-mengecilkan-html" id="markdown-toc-bagaimana-cara-mengecilkan-html">Bagaimana cara mengecilkan html?</a>    <ul>
+      <li><a href="#langkah-1-unduh-file-compresshtml" id="markdown-toc-langkah-1-unduh-file-compresshtml">Langkah 1: Unduh file compress.html</a></li>
+      <li><a href="#langkah-2-simpan-file-compresshtml-pada-folder-layout" id="markdown-toc-langkah-2-simpan-file-compresshtml-pada-folder-layout">Langkah 2: Simpan file compress.html pada folder layout</a></li>
+      <li><a href="#langkah-3-menambahkan-front-matter-pada-layout-default" id="markdown-toc-langkah-3-menambahkan-front-matter-pada-layout-default">Langkah 3: Menambahkan front matter pada layout default</a></li>
+      <li><a href="#langkah-4-simpan-perubahan" id="markdown-toc-langkah-4-simpan-perubahan">Langkah 4: Simpan perubahan</a></li>
+    </ul>
+  </li>
+  <li><a href="#pengaturan-tambahan" id="markdown-toc-pengaturan-tambahan">Pengaturan Tambahan</a>    <ul>
+      <li><a href="#contoh" id="markdown-toc-contoh">Contoh</a></li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="bagaimana-cara-mengecilkan-html">Bagaimana cara mengecilkan html?</h2>
+<p>Sejauh ini Anda dapat mengecilkan penggunaan html menggunakan Grunt atau Gulp, tetapi untuk pemula seperti saya akan sulit difahami, selain itu saya juga lebih suka solusi yang tidak melibatkan plugin.</p>
+
+<h3 id="langkah-1-unduh-file-compresshtml">Langkah 1: Unduh file compress.html</h3>
+<p>Buka <a href="https://github.com/penibelst/jekyll-compress-html/releases/download/v3.0.4/compress.html" title="File Compress HTML">tautan ini</a> dan unduh file compress.html.</p>
+
+<h3 id="langkah-2-simpan-file-compresshtml-pada-folder-layout">Langkah 2: Simpan file compress.html pada folder layout</h3>
+<p>Dalam repository anda cari folder <code class="highlighter-rouge">_layout</code> kemudian simpan file <code class="highlighter-rouge">compress.html</code> di folder tersebut.</p>
+
+<h3 id="langkah-3-menambahkan-front-matter-pada-layout-default">Langkah 3: Menambahkan front matter pada layout default</h3>
+<p>buka file <code class="highlighter-rouge">default.html</code> dalam folder <code class="highlighter-rouge">_layouts</code>. Copy kode di bawah kemudian simpan dibagian atas.</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>---
+layout: compress
+---
+</code></pre></div></div>
+
+<p>isi dari file <code class="highlighter-rouge">default.html</code> akan tampak seperti di bawah ini</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code>---
+layout: compress
+---
+
+<span class="cp">&lt;!DOCTYPE html&gt;</span>
+<span class="nt">&lt;html&gt;</span>
+.
+.
+.
+
+<span class="nt">&lt;/html&gt;</span>
+</code></pre></div></div>
+
+<h3 id="langkah-4-simpan-perubahan">Langkah 4: Simpan perubahan</h3>
+<p>Simpan dan <em>commit</em> perubahannya. Secara default <code class="highlighter-rouge">compress.html</code> akan menjadi layout utama anda.</p>
+
+<h2 id="pengaturan-tambahan">Pengaturan Tambahan</h2>
+<p>jika Anda ingin opsi tambahan maka Anda dapat menggunakan kode dibawah dan simpan dalam file <code class="highlighter-rouge">_config.yml</code>.</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>compress_html:
+    clippings: []
+    comments: []
+    endings: []
+    ignore:
+    envs: []
+    blanklines: false
+    profile: false
+    startings: []
+</code></pre></div></div>
+
+<h3 id="contoh">Contoh</h3>
+<p>Anda dapat mengunakan kode di bawah ini atau mempelajarinya sesuai dengan keinginan anda di <a href="http://jch.penibelst.de/">dokumentasi</a>.</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>compress_html:
+  clippings: all
+  comments: [""]
+  endings: [html, head, body, li, dt, dd, rt, rp, optgroup, option, colgroup, caption, thead, tbody, tfoot, tr, td, th]
+  profile: false
+  blanklines: false
+  ignore:
+    envs: []
+</code></pre></div></div>
+:ET

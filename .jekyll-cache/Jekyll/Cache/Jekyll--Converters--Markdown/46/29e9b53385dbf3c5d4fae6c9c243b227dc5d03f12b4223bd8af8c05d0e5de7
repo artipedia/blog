@@ -1,0 +1,98 @@
+I"ó<ul id="markdown-toc">
+  <li><a href="#mari-kita-mulai-membuat-blog-jekyll" id="markdown-toc-mari-kita-mulai-membuat-blog-jekyll">Mari kita mulai membuat blog Jekyll.</a>    <ul>
+      <li><a href="#kenapa-memilih-github" id="markdown-toc-kenapa-memilih-github">Kenapa Memilih Github</a></li>
+      <li><a href="#langkah-pertama-mencari-themetema-blog-jekyll" id="markdown-toc-langkah-pertama-mencari-themetema-blog-jekyll">Langkah Pertama Mencari Theme/Tema Blog Jekyll</a></li>
+      <li><a href="#langkah-kedua-fork-repositori" id="markdown-toc-langkah-kedua-fork-repositori">Langkah Kedua Fork Repositori</a></li>
+      <li><a href="#langkah-ketiga-periksa-branch-sumber-dipilih" id="markdown-toc-langkah-ketiga-periksa-branch-sumber-dipilih">Langkah Ketiga Periksa Branch Sumber Dipilih</a></li>
+      <li><a href="#langkah-keempat-menambahkan-custom-domain" id="markdown-toc-langkah-keempat-menambahkan-custom-domain">Langkah Keempat Menambahkan Custom Domain</a>        <ul>
+          <li><a href="#cara-pertama" id="markdown-toc-cara-pertama">Cara Pertama</a></li>
+          <li><a href="#cara-kedua" id="markdown-toc-cara-kedua">Cara Kedua</a></li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li><a href="#konfigurasi" id="markdown-toc-konfigurasi">Konfigurasi</a></li>
+</ul>
+
+<h2 id="mari-kita-mulai-membuat-blog-jekyll">Mari kita mulai membuat blog Jekyll.</h2>
+<p>Saya asumsikan anda sudah memiliki akun Github.</p>
+
+<h3 id="kenapa-memilih-github">Kenapa Memilih Github</h3>
+<ol>
+  <li>
+    <p>Hosting di Github benar-benar gratis, cocok bagi kita yang memiliki budget paspasan hanya bermodalkan domain yang kita miliki. Bila anda tidak memiliki domain, anda masih bisa membuat blog dengan url bawaan dari github pages anda.</p>
+  </li>
+  <li>
+    <p>Blog yang dihosting diGithub Pages sangat cepat jika dibandingkan dengan CMS lainnya. Inilah alasan mengapa saya memindahkan semua blog saya ke Jekyll (platform blogging di Github).</p>
+  </li>
+  <li>
+    <p>Tidak ada database atau eksekusi back-end di halaman Github. Jadi kemungkinan situs web diretas adalah nol.</p>
+  </li>
+  <li>
+    <p>Memiliki sedikit kesabaran untuk memahami cara kerjanya. Banyak sekali (setidaknya dalam kasus saya), pertama kali saya kesulitan dan tutorial-tutorial yang ada semuanya dalam bahasa inggris sehingga menyulitkan bagi orang seperti saya yang bahasa inggrisnya pas-pasan.</p>
+  </li>
+</ol>
+
+<h3 id="langkah-pertama-mencari-themetema-blog-jekyll">Langkah Pertama Mencari Theme/Tema Blog Jekyll</h3>
+<p>Sebuah tema penting untuk blog yang bagus. Jika tidak, Anda dapat menggunakan tema dasar Jekyll jika Anda ingin mendesain semuanya sendiri. Tetapi jika Anda mencari tata letak pra-desain maka Anda harus mencari Jekyll Themes. Anda akan menemukan banyak tema tetapi, yang saya sarankan untuk mengunjungi https://jekyll-themes.com dan pilih tema gratis.</p>
+
+<p><img src="https://blog.artipedia.id/img/memilih%20tema%20lagi.png" alt="Memilih Tema" /></p>
+
+<p>Pilih Tema kemudian klik repositori</p>
+
+<h3 id="langkah-kedua-fork-repositori">Langkah Kedua Fork Repositori</h3>
+<p>Pertama pilih tema kemudian fork repositori tema yang anda pilih (anda sudah login di github).</p>
+
+<p><img src="https://blog.artipedia.id/img/fork.png" alt="Copy Repositori" /></p>
+
+<p>Dengan melakukan fork terhadap repositori berarti anda menyalin seluruh repositori sebagai repositori baru di dalam akun Github Anda. Anda dapat mengganti nama repositori menjadi apa pun yang Anda suka di opsi Pengaturan</p>
+
+<h3 id="langkah-ketiga-periksa-branch-sumber-dipilih">Langkah Ketiga Periksa Branch Sumber Dipilih</h3>
+<p>Setelah menyalin repositori tema, buka pengaturan dan temukan bagian Github Pages. Di sini Anda harus memilih cabang mana yang ingin Anda gunakan sebagai sumber situs web.</p>
+
+<p><img src="https://blog.artipedia.id/img/memilih%20branch.png" alt="Memilih Branch" /></p>
+
+<h3 id="langkah-keempat-menambahkan-custom-domain">Langkah Keempat Menambahkan Custom Domain</h3>
+<h4 id="cara-pertama">Cara Pertama</h4>
+<p>Sekarang, arahkan ke repositori dan periksa apakah ada file CNAME di dalamnya. CNAME digunakan untuk domain khusus.</p>
+
+<p>Jika ada, hapus URL di dalamnya dan ubah dengan custom domain milik anda.</p>
+
+<p>Blog Anda seharusnya sudah aktif dan berjalan sekarang. Tetapi berikan waktu. Maksimal 10 menit. Jekyll membangun sebuah blog statis sementara itu.</p>
+
+<h4 id="cara-kedua">Cara Kedua</h4>
+<p>Selain cara di atas anda juga bisa menambahkan custom domain yang anda miliki pada kolom seperti gambar di bawah ini.</p>
+
+<p><img src="https://blog.artipedia.id/img/custom%20domain%20demo.png" alt="Custom Domain" /></p>
+
+<p>Apabila kolom tersebut tidak ada silahkan anda klik pilih tema dan pilih tema apa saja, kemudian kembali ke halaman pengaturan dan isikan custom domain pada kolom tersebut.</p>
+
+<h2 id="konfigurasi">Konfigurasi</h2>
+<p>Edit konfigurasi pada file <code class="highlighter-rouge">_config.yml</code> umumnya akan terlihat seperti ini:</p>
+
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">title</span><span class="pi">:</span> <span class="s">Demo</span> <span class="c1"># Judul Blog Anda</span>
+<span class="na">author</span><span class="pi">:</span> <span class="s">Username Github Anda</span>
+<span class="na">email</span><span class="pi">:</span> <span class="s">email-anda@domain.com</span>
+<span class="na">description</span><span class="pi">:</span> <span class="s">Deskripsi Blog anda.</span>
+<span class="na">baseurl</span><span class="pi">:</span> <span class="s2">"</span><span class="s">/blog"</span> <span class="c1"># isi sesuaikan dengan kebutuhan anda contohnya /blog</span>
+<span class="na">url</span><span class="pi">:</span> <span class="s2">"</span><span class="s">https://demo.artipedia.site"</span> <span class="c1"># Url Blog Anda, e.g. http://example.com</span>
+<span class="na">twitter_username</span><span class="pi">:</span> <span class="s">artipedia243</span> <span class="c1"># ganti username twitter anda</span>
+<span class="na">github_username</span><span class="pi">:</span>  <span class="s">artipedia</span> <span class="c1"># ganti dengan username github anda</span>
+<span class="na">instagram_username</span><span class="pi">:</span> <span class="s">artipedia</span> <span class="c1"># ganti dengan username instragram</span>
+<span class="na">social</span><span class="pi">:</span>
+  <span class="na">name</span><span class="pi">:</span> <span class="s">Nama Anda</span>
+  <span class="na">links</span><span class="pi">:</span>
+    <span class="pi">-</span> <span class="s">https://twitter.com/artipedia</span>
+    <span class="pi">-</span> <span class="s">https://www.facebook.com/artipedia</span>
+    <span class="pi">-</span> <span class="s">https://www.linkedin.com/in/artipedia</span>
+    <span class="pi">-</span> <span class="s">https://plus.google.com/+artipedia</span>
+    <span class="pi">-</span> <span class="s">https://github.com/artipedia</span>
+    <span class="pi">-</span> <span class="s">https://keybase.io/artipedia</span>
+
+<span class="na">disqus</span><span class="pi">:</span>
+  <span class="na">shortname</span><span class="pi">:</span> <span class="s">artipedia</span> <span class="c1"># to enable comments replace with your_disqus_shortname</span>
+</code></pre></div></div>
+
+<p>Setelah menyelesaikan langkah-langkah di atas silahkan cek hasilnya.</p>
+
+:ET

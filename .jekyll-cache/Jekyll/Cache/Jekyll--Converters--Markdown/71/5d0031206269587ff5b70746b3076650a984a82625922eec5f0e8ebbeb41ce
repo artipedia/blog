@@ -1,0 +1,44 @@
+I"<ul id="markdown-toc">
+  <li><a href="#apa-itu-https" id="markdown-toc-apa-itu-https">Apa itu HTTPS?</a></li>
+  <li><a href="#konfigurasi-https-custom-domain" id="markdown-toc-konfigurasi-https-custom-domain">Konfigurasi HTTPS Custom Domain</a></li>
+  <li><a href="#manfaat-mengaktifkan-fitur-https-di-github" id="markdown-toc-manfaat-mengaktifkan-fitur-https-di-github">Manfaat Mengaktifkan Fitur HTTPS di Github</a></li>
+</ul>
+
+<p><a href="https://pages.github.com/">Github Pages</a> saat ini menurut saya menjadi alternatif terbaik untuk mempublikasikan situs web yang indah, ringan, loading cepat. . GitHub Pages telah mendukung domain khusus sejak 2009, serta mendukung HTTPS sejak 2016 .</p>
+
+<p>Pada 01 Mei 2018 lalu Github Pages memberikan fitur gratis terbaru yaitu fitur HTTPS yang mendukung Custom Domain.</p>
+
+<h3 id="apa-itu-https">Apa itu HTTPS?</h3>
+<p>HTTPS (paling dikenal sebagai ikon kunci di bilah kiri alamat browser Anda) yang dapat mengenkripsi lalu lintas antara server GitHub dan browser.</p>
+
+<p><em>Hypertext Transfer Protocol Secure</em> atau biasa kita sebut dengan <strong>HTTPS</strong> adalah sebuah protocol komunikasi dalam jaringan komputer yang aman karena HTTPS membuat perintah atau data yang melalui protocol HTTPS inidilindungi dengan sistem encryp melalui berbagi format sehingga dengan demikian akan menyulitkan para hacker yang berusaha membajak isi dokumen yang dikirimkan.</p>
+
+<p>HTTPS adalah gabungan dari protocol HTTP dengan SSL/TSL protokol. Seluruh komunikasi yang dilakukan melalui HTTPS akan dienkripsi dan dianalisa dengan tujuan untuk keamanan ketika terjadi transaksi data melalui internet.</p>
+
+<p>Melalui fitur ini, situs web anda yang dihosting di Github dapat diases melalui HTTPS, sehingga lebih seo friendly dan meyakinkan pembaca kalau situs anda situs yang aman.</p>
+
+<h3 id="konfigurasi-https-custom-domain">Konfigurasi HTTPS Custom Domain</h3>
+
+<p>Perbarui DNS domain anda dengan alamat IP baru.</p>
+<ol>
+  <li>185.199.108.153</li>
+  <li>185.199.109.153</li>
+  <li>185.199.110.153</li>
+  <li>185.199.111.153</li>
+</ol>
+
+<p>Setelah data DNS diperbarui tunggu hingga DNS terupdate oleh provider, umumnya tidak kurang dari 24 Jam tergantung provider mana yang anda gunakan (tempat beli domain anda).</p>
+
+<p>Langkah selanjutnya di akun github pada halaman repository anda hapus domain kemudian simpan, dan tambahkan kembali domain tersebut.</p>
+
+<p><img src="https://blog.artipedia.id/img/enforcehttpsfixed.png" alt="Menamai Repositori" /></p>
+
+<p>Apabila <strong>Enforce HTTPS</strong> tidak bisa diceklis seperti gambar di atas, anda hanya tinggal menunggu karena prosesnya memakan maktu maksimal 24 jam sampai tersedia.</p>
+
+<h3 id="manfaat-mengaktifkan-fitur-https-di-github">Manfaat Mengaktifkan Fitur HTTPS di Github</h3>
+<ol>
+  <li>Waktu pemuatan situs lebih cepat</li>
+  <li>Alamat IP baru ini tidak hanya memungkinkan kami untuk melayani situs Anda melalui HTTPS, tetapi juga menempatkan situs Anda di belakang jaringan pengiriman konten (CDN) , memungkinkan kami untuk melayani situs Anda dari pusat data di seluruh dunia dengan kecepatan cepat, dan menawarkan tambahan perlindungan terhadap serangan DDoS . Meskipun alamat IP sebelumnya akan tetap tersedia untuk periode transisi, sebaiknya Anda bermigrasi ke alamat IP baru untuk mendapatkan manfaat ini.</li>
+</ol>
+
+:ET

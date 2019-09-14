@@ -1,0 +1,52 @@
+I"�<ul id="markdown-toc">
+  <li><a href="#instal-ruby" id="markdown-toc-instal-ruby">Instal Ruby</a></li>
+  <li><a href="#update" id="markdown-toc-update">Update</a></li>
+  <li><a href="#instal-ruby-devkit" id="markdown-toc-instal-ruby-devkit">Instal Ruby DevKit</a></li>
+</ul>
+
+<p>Ruby adalah bahasa pemrograman yang ditulis Jekyll. Anda harus menginstal Ruby dan DevKit yang sesuai, yang diperlukan untuk membangun beberapa dependensi Jekyll.</p>
+
+<h3 id="instal-ruby">Instal Ruby</h3>
+<p>Pertama, klik tombol di bawah dan unduh penginstal untuk Ruby v2.0.0 yang sesuai dengan arsitektur sistem Anda (x86 / x64).</p>
+
+<p><a href="https://rubyinstaller.org/downloads/">RubyInstaller Downloads</a></p>
+
+<p>Jalankan installer dan ikuti langkah-langkah instalasi. Saat Anda masuk ke layar di bawah, pastikan untuk mencentang kotak “Tambah Ruby yang dapat dieksekusi ke PATH” Anda.</p>
+
+<p><img src="https://blog.artipedia.id/img/ruby-path.png" alt="Centang Ruby Path" /></p>
+
+<p>Klik Pasang dan Ruby akan dipasang dalam hitungan detik.</p>
+
+<h3 id="update">Update</h3>
+<p>Ruby installer Versi terbaru Ruby+Devkit 2.4.4-1 (x64) sehingga anda tidak perlu mengikuti langkah-langkah yang tertera di bawah.</p>
+
+<h3 id="instal-ruby-devkit">Instal Ruby DevKit</h3>
+<p>Jekyll memiliki beberapa dependensi yang hanya menyediakan kode sumber mentah. Untuk membuatnya menjadi executable yang berfungsi penuh, Anda mungkin perlu menginstal Kit Pengembangan.</p>
+
+<p>Klik tombol di bawah dan unduh arsip DevKit yang sesuai dengan instalasi Ruby dan arsitektur sistem Anda. Untuk Ruby v2.0.0, nama file akan dimulai dengan DevKit-mingw64. Pilih versi 32bits atau 64bits tergantung pada sistem Anda.</p>
+
+<p><a href="https://rubyinstaller.org/downloads/">RubyInstaller Downloads</a></p>
+
+<p>Unduhan dan ekstrak file di folder C: contoh C:\RubyDevKit. Klik Extract dan tunggu hingga proses selesai.</p>
+
+<p>Selanjutnya, Anda perlu menginisialisasi DevKit dan mengikatnya ke instalasi Ruby Anda. Buka command prompt seperti gambar di bawah ini.</p>
+
+<p><img src="https://blog.artipedia.id/img/cmd.png" alt="Menjalankan Command Prompt" /></p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>cd C:\RubyDevKit
+</code></pre></div></div>
+
+<p>Langkah selanjutnya ketikkan:.</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ruby dk.rb init
+</code></pre></div></div>
+
+<p>Instal DevKit, kombinasikan dengan instalasi Ruby Anda.</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ruby dk.rb install
+</code></pre></div></div>
+
+<p>Ringkasan
+Anda sekarang memiliki instalasi Ruby yang berfungsi pada mesin Anda dan Anda dapat membuat aplikasi yang berfungsi penuh menggunakan Ruby Development Kit. Ruby menyertakan cara untuk menginstal apa yang disebut gems—software perangkat lunak yang dapat Anda gunakan dari baris perintah yang sangat diperlukan untuk membangun blog Jekyll.</p>
+
+:ET

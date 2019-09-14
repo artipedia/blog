@@ -1,0 +1,70 @@
+I"Î<ul id="markdown-toc">
+  <li><a href="#apa-itu-cryptocurrency" id="markdown-toc-apa-itu-cryptocurrency">Apa itu Cryptocurrency</a></li>
+  <li><a href="#widget-cryptocurrency" id="markdown-toc-widget-cryptocurrency">Widget Cryptocurrency</a></li>
+  <li><a href="#pemasangan-widget-cryptocurrency" id="markdown-toc-pemasangan-widget-cryptocurrency">Pemasangan Widget Cryptocurrency</a></li>
+  <li><a href="#contoh" id="markdown-toc-contoh">Contoh</a></li>
+</ul>
+
+<h3 id="apa-itu-cryptocurrency">Apa itu Cryptocurrency</h3>
+<p><strong>Cryptocurrency</strong> sudah ada sekitar sepuluh tahun lalu dan kini telah menjadi cukup populer, tersebar luas, serta dilingkupi juga atas banyak kontroversi dari perkembangan yang inovatif.</p>
+
+<p>Cryptocurrency, kosakata turunan dari kata cryptography atau kriptografi (bahasa persandian), merujuk kepada sebuah kesepakatan dari para pengguna dan proses penyimpanan yang diamankan oleh sandi-sandi yang kuat.</p>
+
+<p>Sekarang ini <em>cryptocurrency</em> (<strong>mata uang digital</strong>) yang ada lebih dari 1000. Salah satu yang paling banyak dan bernilai tinggi diantaranya Bitcoin, diikuti oleh ETH dan seterusnya.</p>
+
+<h3 id="widget-cryptocurrency">Widget Cryptocurrency</h3>
+<p><strong>Widget cryptocurrency</strong> dalam postingan ini adalah widget yang menampilkan nilai mata uang digital (cryptocurrency) secara realtime di blog, baik itu blogspot, wordpress, dll.</p>
+
+<h3 id="pemasangan-widget-cryptocurrency">Pemasangan Widget Cryptocurrency</h3>
+
+<p>Langkah 1: Buka situs web <a href="https://wwww.livecointrackers.com/en/cryptocurrency-widgets" title="Widget Cryptocurreny">Widget Cryptocurreny</a>. di Situs web tersebut anda dapat melihat terdapat tiga pilihan widget.</p>
+<ol>
+  <li>Ticker (menampilkan 10 jenis mata uang digital)</li>
+  <li>Single Coin Ticker (menampilkan salah satu jenis mata uang digital sesuai dengan pilihan anda)</li>
+  <li>Dominance Chart (menampilkan mata uang digital yang paling dominan)</li>
+  <li>Ticker Animation (menampilkan deretan mata uang digital berjalan)</li>
+</ol>
+
+<p>Langkah 2: Silahkan anda pilih jenis widget yang ingin anda tampilkan.</p>
+
+<p>Langkah 3: Copy code iframe.</p>
+
+<p>langkah 4: Pastekan code di blog sobat</p>
+
+<h3 id="contoh">Contoh</h3>
+<ol>
+  <li>Widget Ticker</li>
+</ol>
+<p>
+<iframe src="https://www.livecointrackers.com/en/widget/ticker?hcolor=000000&amp;tcolor=ffffff" style="width: 100%; overflow: hidden;scroll-behavior: unset;height: 525px;border: unset;"></iframe></p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;iframe src="https://livecointrackers.com/en/widget/ticker?hcolor=000000&amp;tcolor=ffffff" style="width: 100%; overflow: hidden;scroll-behavior: unset;height: 525px;border: unset;"&gt;&lt;/iframe&gt;
+</code></pre></div></div>
+
+<ol>
+  <li>Widget Single Coin Ticker</li>
+</ol>
+<p><iframe src="https://www.livecointrackers.com/en/widget/ticker/BTC?hcolor=000000&amp;tcolor=ffffff" style="width: 100%; overflow: hidden;scroll-behavior: unset;height: 180px;"></iframe>
+</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;iframe src="https://www.livecointrackers.com/en/widget/ticker/BTC?hcolor=000000&amp;tcolor=ffffff" style="width: 100%; overflow: hidden;scroll-behavior: unset;height: 180px;border: unset;"&gt;&lt;/iframe&gt;
+</code></pre></div></div>
+
+<ol>
+  <li>Dominance Chart</li>
+</ol>
+<p>
+<iframe src="https://www.livecointrackers.com/en/widget/dominance-chart" style="width: 100%; overflow: hidden;scroll-behavior: unset;height: 400px;border: unset;"></iframe>
+
+</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;iframe src="https://www.livecointrackers.com/en/widget/dominance-chart" style="width: 100%; overflow: hidden;scroll-behavior: unset;height: 400px;border: unset;"&gt;&lt;/iframe&gt;
+</code></pre></div></div>
+<ol>
+  <li>Ticker Animation</li>
+</ol>
+<p>
+<iframe src="https://www.livecointrackers.com/en/widget/topcoin?hcolor=fff&amp;tcolor=222" style="width: 100%;"></iframe>
+
+</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;iframe src="https://www.livecointrackers.com/en/widget/topcoin?hcolor=fff&amp;tcolor=222" style="width: 100%;"&gt;&lt;/iframe&gt;
+</code></pre></div></div>
+
+:ET

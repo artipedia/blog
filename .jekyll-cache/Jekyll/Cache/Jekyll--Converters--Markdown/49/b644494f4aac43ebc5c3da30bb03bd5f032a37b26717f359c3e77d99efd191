@@ -1,0 +1,19 @@
+I"§<ul id="markdown-toc">
+  <li><a href="#mengapa-memilih-github" id="markdown-toc-mengapa-memilih-github">Mengapa Memilih Github</a>    <ul>
+      <li><a href="#1-gratis" id="markdown-toc-1-gratis">1. Gratis</a></li>
+      <li><a href="#2-cepat" id="markdown-toc-2-cepat">2. Cepat</a></li>
+      <li><a href="#3-aman" id="markdown-toc-3-aman">3. Aman</a></li>
+      <li><a href="#4-blog-aware" id="markdown-toc-4-blog-aware">4. Blog-aware</a></li>
+    </ul>
+  </li>
+</ul>
+<h2 id="mengapa-memilih-github">Mengapa Memilih Github</h2>
+<h3 id="1-gratis">1. Gratis</h3>
+<p>Hosting di Github Pages gratis selamanya, tanpa mengeluarkan uang sedikitpun kita sudah bisa membuat website.</p>
+<h3 id="2-cepat">2. Cepat</h3>
+<p>Github Pages sangat cepat jika dibandingkan dengan WordPress dan CMS lainnya. Karena Anda memiliki kontrol penuh pada situs web anda. Inilah alasan mengapa saya memindahkan semua blog saya dari WordPress dan Blogger ke Jekyll (platform blogging di Github).</p>
+<h3 id="3-aman">3. Aman</h3>
+<p>Tidak ada database atau eksekusi back-end di halaman Github. Jadi kemungkinan situs web diretas adalah nol persen. Jika Anda masih menggunakan WordPress, Drupal atau Joomla untuk membuat blog, maka saya ingin Anda mempertimbangkan Github Pages.</p>
+<h3 id="4-blog-aware">4. Blog-aware</h3>
+<p>Jekyll adalah generator situs statis yang digunakan untuk blog di halaman Github. Blog Jekyll akan memiliki hampir semua fitur dari blog umum.</p>
+:ET

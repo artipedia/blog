@@ -1,0 +1,18 @@
+I"°<ul id="markdown-toc">
+  <li><a href="#instal-jekyll-gem-di-window" id="markdown-toc-instal-jekyll-gem-di-window">Instal Jekyll Gem di Window</a></li>
+  <li><a href="#kesimpulan" id="markdown-toc-kesimpulan">Kesimpulan</a></li>
+</ul>
+<h3 id="instal-jekyll-gem-di-window">Instal Jekyll Gem di Window</h3>
+<p>Jekyll hadir dalam bentuk <strong>Ruby Gem</strong>, yang merupakan paket perangkat lunak yang mudah dipasang. Untuk <em>menginstal Jekyll</em> dan semua dependensi defaultnya dilakukan dengan menjalankan perintah melalui Command Prompt di window.</p>
+
+<p>Buka Command Prompt kemudian ketikan perintah di bawah</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>gem install jekyll
+</code></pre></div></div>
+
+<p>Tekan enter, kemudian tunggu hingga selesai karena proses instalasi memerlukan waktu beberapa saat.</p>
+
+<p>Anda telah berhasil menginstal Jekyll.</p>
+<h3 id="kesimpulan">Kesimpulan</h3>
+<p>Jekyll Gem diperlukan bagi anda yang akan membuat/membangun situs/blog jekyll. Untuk menginstal Jekyll Gem, Pertama kali anda harus menginstal <a href="https://blog.artipedia.site/id/cara-install-ruby.html" title="Cara Instal Ruby">Ruby + Devkit</a>.</p>
+:ET
