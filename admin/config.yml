@@ -3,12 +3,14 @@ backend:
   repo: ArtiPedia/blog
   preview_context: my-provider/deployment
   
+site_url: https://blog.artipedia.id
+  
 media_folder: "img/"
 public_folder: "/img/"
 
 collections:
-  - name: "post"
-    label: "Post"
+  - name: "posts"
+    label: "Posts"
     folder: "_posts/"
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
