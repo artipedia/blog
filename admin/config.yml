@@ -25,14 +25,14 @@ collections:
       - {label: "Tags", name: "tags", widget: "list"}
       - {label: "Body", name: "body", widget: "markdown"}
       
-  - name: 'Author'
-    label: 'Author'
+  - name: 'profil'
+    label: 'Profil'
     delete: false # Prevent users from deleting documents in this collection
     editor:
       preview: false
     files:
-      - name: "authors"
-        label: "Authors"
+      - name: "penulis"
+        label: "Penulis"
         file: "_data/authors.yml"
         description: "Author descriptions"
         fields:
