@@ -14,11 +14,6 @@ categories: [Dasar, Tutorial]
 ## Perkenalan
 Pernahkan anda melihat blog/web dengan background berupa partikel-partikel yang bergerak, seperti contoh di bawah? Kali ini saya akan membagikan cara memasang background partikel di blog/web.
 
-Contoh web/blog yang menggunakan background particle.js
-1. https://elivecoin.com
-2. https://swopcrypto.com
-3. https://livecointrackers.com
-
 Background di atas merupakan background dengan menggunakan particle.js. Particles.js adalah Javascript Library yang ringan untuk membuat partikel yang dapat membuat halaman blog/web anda tampak cantik.
 
 ## Pemasangan
