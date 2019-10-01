@@ -84,33 +84,33 @@ Hasilnya
 ## Link
 Untuk menyisipkan link
 ```
-1. [ArtiPedia](http://artipedia.site/)
-2. [ArtiPedia](http://artipedia.site/ "Link dengan Atribut Title")
+1. [ArtiPedia](http://artipedia.id/)
+2. [ArtiPedia](http://artipedia.id/ "Link dengan Atribut Title")
 ```
 Hasilnya 
-1. [ArtiPedia](http://artipedia.site/)
-2. [ArtiPedia](http://artipedia.site/ "Link dengan Atribut Title")
+1. [ArtiPedia](http://artipedia.id/)
+2. [ArtiPedia](http://artipedia.id/ "Link dengan Atribut Title")
 
 ## Image
 ```
 1. Inline-style: 
-![alt text](https://artipedia.site/img/logo-2x.png "Logo Title Text 1")
+![alt text](https://artipedia.id/img/logo-2x.png "Logo Title Text 1")
 
 2. Reference-style: 
 ![alt text][logo]
-[logo]: https://artipedia.site/img/logo-2x.png "Logo Title Text 2"
+[logo]: https://artipedia.id/img/logo-2x.png "Logo Title Text 2"
 ```
 
 Hasilnya
 1. Inline-style: 
 
-![alt text](https://artipedia.site/img/logo-2x.png "Logo Title Text 1")
+![alt text](https://artipedia.id/img/logo-2x.png "Logo Title Text 1")
 
 2. Reference-style: 
 
 ![alt text][logo]
 
-[logo]: https://artipedia.site/img/logo-2x.png "Logo Title Text 2"
+[logo]: https://artipedia.id/img/logo-2x.png "Logo Title Text 2"
 
 ## Blockquote
 Untuk menambahkan <code>blockquote</code> tambahkan <code>></code> sebelum/pada awal paragraf
@@ -122,6 +122,6 @@ Hasilnya
 
 <nav class='main-nav'><ul>
 <li class="current">
-    <a href="https://github.com/ArtiPedia/ArtiPedia/new/master/docs/_posts/">Mulai</a>
+    <a href="https://github.com/ArtiPedia/NewArtiPedia/new/master/docs/_posts/">Mulai</a>
   </li></ul></nav>
 
