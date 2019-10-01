@@ -4,9 +4,9 @@ permalink: /docs/sambutan/
 redirect_from: /docs/index.html
 ---
 
-Selamat datang di [Blog ArtiPedia](https://blog.artipedia.site/).
+Selamat datang di [Blog ArtiPedia](https://blog.artipedia.id).
 
-[Blog ArtiPedia](https://blog.artipedia.site/) merupakan website statis yang dibuat dengan jekyll dengan memanfaatkan hosting gratis dari github dan berisi tutorial cara membuat website memanfaatkan github pages bagi pemula.
+[Blog ArtiPedia](https://blog.artipedia.id/) merupakan website statis yang dibuat dengan jekyll dengan memanfaatkan hosting gratis dari github dan berisi tutorial cara membuat website memanfaatkan github pages bagi pemula.
 
 Blog ArtiPedia merupakan proyek terbuka, maka semua orang orang baik itu mahasiswa, pekerja, siswa, ataupun lainnya dapat berkontribusi di Blog ArtiPedia tentunya dengan memperhatikan kode etik dalam berkontribusi.
 
