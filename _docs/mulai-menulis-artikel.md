@@ -122,6 +122,6 @@ Hasilnya
 
 <nav class='main-nav'><ul>
 <li class="current">
-    <a href="https://github.com/ArtiPedia/NewArtiPedia/new/master/docs/_posts/">Mulai</a>
+    <a href="https://github.com/ArtiPedia/blog/new/master/docs/_posts/">Mulai</a>
   </li></ul></nav>
 
