@@ -4,7 +4,7 @@ description: Membuat jekyll blog secara lokal di komputer anda, mengedit blog Je
 permalink: /docs/membuat-blog-jekyll-secara-lokal/
 ---
 
-Jika Anda sudah memiliki Ruby dan RubyGems ([lihat cara instal Ruby](https://blog.artipedia.site/id/cara-install-ruby.html)) diinstal di PC anda,  Anda dapat membuat situs Jekyll baru dengan melakukan hal berikut menggunakan command prompt:
+Jika Anda sudah memiliki Ruby dan RubyGems ([lihat cara instal Ruby](/cara-install-ruby.html)) diinstal di PC anda,  Anda dapat membuat situs Jekyll baru dengan melakukan hal berikut menggunakan command prompt:
 
 
 ```sh
