@@ -83,3 +83,8 @@ compress_html:
   ignore:
     envs: []
 ```
+
+### Alat Kompress Manual
+1. [Compress Javascript](https://jsminify.artipedia.id)
+2. [Compress CSS](https://cssminify.artipedia.id)
+3. [Base64 Image Converter](https://base64.artipedia.id)
